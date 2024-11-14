@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Destination cards styling */
+.cards {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+:hover.sudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.9;
+    box-shadow: 5px 8px 15px rgb(10, 52, 11);
+    border: 3px solid #4CAF50;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    background-size: cover; 
+    z-index: 10;
+    background-image: url("https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400");
+    transition: 2s ease-in; 
+    .japan-card-image,.card-text{display: none;}
+}
+.japan-card-image {
+    background-size: cover; 
+    height: 205px;
+    width: 205px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.9;
+    box-shadow: 5px 8px 15px rgb(10, 52, 11);
+    border: 3px solid #4CAF50;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+}
+p {
+    text-align: center;
+}
+
+ .card-text {
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    table {
+        width: 100%;
+    }
+}
