@@ -22,3 +22,12 @@ countrySelect.addEventListener("change", () => {
         window.location.href = `destinations.html#${countrySelect.value}`
     }
 })
+
+emailInput.addEventListener("input", () => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailPattern.test(emailPattern.value)) {
+        emailInput.style.borderColor = "red";
+    } else {
+        emailInput.style.borderColor = "green";
+    }
+})
